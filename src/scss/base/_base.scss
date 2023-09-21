@@ -20,7 +20,27 @@ img{
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  &--decor {
+    position: relative;
+  }
+
+  &--decor::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 268px;
+    height: 24px;
+    z-index: -1;
+
+    background-image: url("./../../img/discover/underline.svg");
+    background-repeat:no-repeat ;
+  }
 }
+
+
 .text{
   color: var(--text-muted);
   font-size: 18px;
@@ -32,4 +52,7 @@ img{
     margin-top: 1em;
   }
 
+}
+.muted{
+  color: var(--text-muted);
 }
