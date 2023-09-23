@@ -9,8 +9,6 @@
   align-items: center;
 }
 
-.discover__desc {
-}
 
 .discover__title {
   margin-bottom: 24px;
@@ -21,14 +19,21 @@
   margin-bottom: 40px;
 }
 
-.text {
-}
 
-.discover__form {
-}
 
 .discover__picture {
+  position: relative;
 }
 
-.discover__picture-img {
+
+.discover__picture-hint{
+  position: absolute;
+  top: 90px;
+  left: 30px;
+}
+
+.discover__picture--scroll{
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
 }
