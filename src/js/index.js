@@ -2,6 +2,23 @@
 //import mobileNav from './modules/mobile-nav.js'
 //mobileNav();
 
+// import Swiper JS
+
+import Swiper from "swiper/bundle";
+
+// import styles bundle
+import "swiper/css/bundle";
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 4,
+  spaceBetween: 32,
+  navigation: {
+    nextEl: "#sliderNext",
+    prevEl: "#sliderPrev",
+  },
+});
+
+/*
 import { easepick, TimePlugin } from "@easepick/bundle";
 
 const picker = new easepick.create({
@@ -13,3 +30,4 @@ const picker = new easepick.create({
   format: "HH:mm, DD/MM/YY",
   plugins: [TimePlugin],
 });
+*/
