@@ -1,33 +1,14 @@
 // Мобильная навигация!!!
 //import mobileNav from './modules/mobile-nav.js'
 //mobileNav();
+// import autoComplete from "./modules/aytoComplete";
+// autoComplete();
 
-// import Swiper JS
+import easepick from "./modules/easepick.js";
+easepick();
 
-import Swiper from "swiper/bundle";
+import swiper from "./modules/swiper.js";
+swiper();
 
-// import styles bundle
-import "swiper/css/bundle";
-
-const swiper = new Swiper(".swiper", {
-  slidesPerView: 4,
-  spaceBetween: 32,
-  navigation: {
-    nextEl: "#sliderNext",
-    prevEl: "#sliderPrev",
-  },
-});
-
-/*
-import { easepick, TimePlugin } from "@easepick/bundle";
-
-const picker = new easepick.create({
-  element: document.getElementById("datePicket"),
-  css: [
-    "https://cdn.jsdelivr.net/npm/@easepick/core@1.2.1/dist/index.css",
-    "https://cdn.jsdelivr.net/npm/@easepick/time-plugin@1.2.1/dist/index.css",
-  ],
-  format: "HH:mm, DD/MM/YY",
-  plugins: [TimePlugin],
-});
-*/
+import scrollReveal from "./modules/scrollReveal.js";
+scrollReveal();
